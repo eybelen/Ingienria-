@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inicio</title>
+        <link rel="stylesheet" href="css/EstiloPrincipal.css" type="text/css" />
+        <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css" />
+    </head>
+    <body class="fondo">
+        <div class="divExterno" style="font-size: 13px">
+            <!--Cabecera-->
+            <div class="header">
+                <div class="banner">
+                    <div id="userData">
+                        <div class="photoFrameUser">
+                            <img class="userPhoto" src="css/Images/Banner/User.png" />
+                        </div>
+                        <div class="userDataText">
+                            <div class="userName">
+                                <span>admin admin</span>
+                            </div>
+
+                            <div class="userSeparator"></div>
+                        </div>
+                        <div class="entityName">
+                            <span>rol</span>
+                        </div>
+                    </div>
+
+                    <div id="logo"></div>
+                </div>
+
+                <!--Inicio y Salir-->
+                <div class="linkbar">
+                    <div class="linkbarC">
+                        <table style="height: 26px">
+                            <tbody>
+                                <tr>
+                                    <td class="barMenuSeparator1">
+                                        <img src="css/Images/Icons/inicio.png" alt="Inicio" />
+                                    </td>
+                                    <td class="barMenuSeparator2">
+                                        <a id="" class="linksBar" href="Inicio.html">Inicio</a>
+                                    </td>
+
+                                    <td class="barMenuSeparator1">
+                                        <img
+                                            src="css/Images/Icons/configuracion.png"
+                                            alt="Inicio" />
+                                    </td>
+                                    <td class="barMenuSeparator2">
+                                        <label for="btn_password" class="linksBar"
+                                            >Cambiar Contraseña
+                                        </label>
+                                    </td>
+
+                                    <td class="barMenuSeparator1">
+                                        <img src="css/Images/Icons/salir.png" alt="Salir" />
+                                    </td>
+                                    <td class="barMenuSeparator2">
+                                        <a class="linksBar" href="index.html">Salir</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="linkbarLeft"></div>
+                </div>
+            </div>
+
+            <!--Cambiar Contraseña-->
+            <input type="checkbox" id="btn_password" />
+            <div class="container_password">
+                <div class="cont_password">
+                    <nav>
+                        <form class="needs-validation" novalidate>
+                            <div class="container">
+                                <label>Contraseña actual</label>
+                                <input type="text" class="form-control" required />
+
+                                <label>Nueva contraseña</label>
+                                <input type="text" class="form-control" required />
+
+                                <label>Confirmar contraseña</label>
+                                <input type="text" class="form-control" required />
+
+                                <button class="boton btn btn-primary" type="submit">Aceptar</button>
+                            </div>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+
+            <!--Area Central-->
+            <div class="row col-12" style="margin: 0">
+                <!--Menu-->
+                <div class="col-3" style="padding-left: 0; padding-right: 5px">
+                    <!--Opciones del Menú-->
+                    <div class="list-group">
+                        <p class="tituloMenú">Menú</p>
+
+                        <a
+                            href="#"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/ficha_clinica.png" width="20px" />
+                            Ficha clínica
+                        </a>
+
+                        <a
+                            href="#"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/admision.png" width="20px" />
+                            Admisión de pacientes
+                        </a>
+
+                        <a
+                            href="Paginas/Búsqueda_de_pacientes.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/buscar_citas.png" width="20px" />
+                            Buscar Citas
+                        </a>
+
+                        <a
+                            href="Paginas/Búsqueda_de_pacientes.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/planificacion_enfermeria.png" width="20px" />
+                            Citas (estudios)
+                        </a>
+
+                        <a
+                            href="Paginas/Lista_De_Trabajo_Estudios.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/citas_estudio.png" width="18px" />
+                            Listas de Estudios
+                        </a>
+
+                        <a
+                            href="Paginas/Lista_de_trabajo_de_informes.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/lista_trabajo_reportes.png" width="18px" />
+                            Lista de Informes
+                        </a>
+
+                        <a
+                            href="../Administration/ConfigurarTiposEstudio.aspx"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/tipo_estudio.png" width="20px" />
+                            Tipos de estudios
+                        </a>
+
+                        <a
+                            href="/Paginas/Servicio_de_Citas.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/servicio_citas.png" width="23px" />
+                            Servicio de citas
+                        </a>
+
+                        <a
+                            href="Paginas/Gestión_de_usuarios_y_roles.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/usuarios_roles.png" width="20px" />
+                            Usuarios y roles
+                        </a>
+
+                        <a
+                            href="Paginas/Gestión_de_usuarios_y_roles.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/usuarios_roles.png" width="20px" />
+                            Médico
+                        </a>
+
+                        <a
+                            href="/Paginas/Equipos.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/equipo.png" width="20px" />
+                            Equipos
+                        </a>
+
+                        <a
+                            href="Paginas/Información_de_la_Institución.html"
+                            class="list-group-item list-group-item-action list-group-item-success">
+                            <img src="css/Images/Menu/usuarios_roles.png" width="20px" />
+                            Información de la institución
+                        </a>
+                    </div>
+                </div>
+
+                <!--Zona de trabajo-->
+                <div class="col-9 mensage" style="padding: 0; margin: 0">
+                    <p class="titulo">Inicio</p>
+
+                    <!--Espacio de trabajo-->
+                    <div style="padding-left: 10px; padding-right: 10px; text-align: justify">
+                        <br />
+                        <b>XAVIA RIS</b> es un
+                        <b>Sistema de Información Radiológica</b> (<b>RIS</b>, por sus siglas en
+                        inglés). Los <b>RIS</b> son sistemas ampliamente usados en las instituciones
+                        hospitalarias para la informatización de los departamentos de Diagnóstico
+                        por Imágenes.
+                        <br />
+                        <br />
+                        El XAVIA RIS está concebido para interactuar con <b>XAVIA PACS </b>, Sistema
+                        de Almacenamiento y Transmisión de Imágenes Médicas (<b>PACS</b>, por sus
+                        siglas en inglés).
+                        <br />
+                        <br />
+                        El sistema <b>XAVIA PACS</b> se encarga del almacenamiento, obtención,
+                        visualización y manipulación de imágenes médicas de las modalidades
+                        diagnósticas; <b>XAVIA RIS</b>
+                        sirve como complemento para cerrar el flujo de trabajo de los departamentos
+                        de diagnósticos por imágenes de cualquier institución hospitalaria.
+                        <br />
+                        <br />
+                        <b>XAVIA RIS</b> facilita al personal de atención y organización de los
+                        servicios las herramientas para la gestión de la información de los
+                        pacientes que son atendidos en el Departamento; así como la información de
+                        las citas otorgadas a estos tanto para la realización de estudios de
+                        imágenes, como la realización de consultas con especialistas del
+                        Departamento. Permite la creación de las listas de trabajo para los equipos
+                        de adquisición de imágenes <b>DICOM</b> compatibles, así como una lista de
+                        trabajo para las consultas y especialistas.<br />
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/Bootstrap/js/bootstrap.min.js"></script>
+        <script src="/js/jquery-3.6.1.min.js"></script>
+        <script src="/js/app.js"></script>
+    </body>
+</html>
