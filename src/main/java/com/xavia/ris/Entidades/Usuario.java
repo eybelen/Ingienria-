@@ -1,20 +1,18 @@
 package com.xavia.ris.Entidades;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
-import jakarta.persistence.Table;
-import jakarta.persistence.UniqueConstraint;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
 import java.io.Serializable;
 
 @Entity
-@Table(
-  name = "Usuario",
-  uniqueConstraints = @UniqueConstraint(columnNames = "correo")
-)
+@Table(name = "Usuario", uniqueConstraints = @UniqueConstraint(columnNames = "correo"))
 public class Usuario implements Serializable {
 
   @Id
@@ -36,16 +34,16 @@ public class Usuario implements Serializable {
   @Column(nullable = false)
   private String password;
 
-  public Usuario() {}
+  public Usuario() {
+  }
 
   public Usuario(
-    Long id,
-    String foto,
-    String username,
-    String correo,
-    String rol,
-    String password
-  ) {
+      Long id,
+      String foto,
+      String username,
+      String correo,
+      String rol,
+      String password) {
     this.id = id;
     this.foto = foto;
     this.username = username;
@@ -101,4 +99,5 @@ public class Usuario implements Serializable {
   public void setPassword(String password) {
     this.password = password;
   }
+
 }

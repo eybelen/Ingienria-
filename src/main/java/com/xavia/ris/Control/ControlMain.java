@@ -11,4 +11,10 @@ public class ControlMain {
   public String verPrincipal(Model model) {
     return "Principal";
   }
+
+  @RequestMapping("/login")
+  public String verLogin(Model model) {
+    return "Login";
+  }
+
 }

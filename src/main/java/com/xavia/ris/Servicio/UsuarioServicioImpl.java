@@ -34,4 +34,9 @@ public class UsuarioServicioImpl implements IUsuarioServicio {
   public void eliminarPorId(Long id) {
     repo.deleteById(id);
   }
+
+  @Override
+  public Usuario getByUsername(String username) {
+    return repo.findByUsername(username).orElse(null);
+  }
 }

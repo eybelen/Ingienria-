@@ -11,4 +11,6 @@ public interface IUsuarioServicio {
   public void eliminarPorId(Long id);
 
   public Usuario buscarPorId(Long id);
+
+  public Usuario getByUsername(String username);
 }

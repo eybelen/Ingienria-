@@ -11,3 +11,6 @@ public class RisApplication {
 	}
 
 }
+// Cosas que faltan
+// Las cosas según el rol 
+// Notificaciones a la ora de realizar las acciones de eliminar, insertar..
